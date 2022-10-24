@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Cybsafe React Practical
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there,
 
-## Available Scripts
+Thanks for looking at my practical.
 
-In the project directory, you can run:
+Please find enclosed my pokedex written with React, Typescript, Context/Hooks, and coffee.
 
-### `npm start`
+### Implementation Comments
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- I chose to use hooks and context to control data flow and API calls. I could have used the Redux/adapters/selectors/thunk ecosystem too as I have in tons of other projects but as this data is simple I chose to handle it via context instead. Please let me know if you'd like me to implement Redux instead!
+- I chose not to use a UI lib, again, as the components are super simple. Though Material, Ant design, and Bootstrap are all amazing libraries.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Testing Strategy
 
-### `npm test`
+For testing I would deploy Jest snapshot & unit tests and Storybook. There are many great alternatives such as Jasmine, Mocha, andCyprus but I've always found the ecosystem and developers around Jest to be solid.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I would use snapshot tests for the front-end functional elements to ensure visual fidelity between commits/versions.
 
-### `npm run build`
+I would use traditional unit testing and mocking to do two things. To ensure business logic continuity and prevent breaking changes and to create a barrier between API version changes and front end code.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Lastly, and while not strictly considered a testing strategy, I would use Storybook as a preventative and maintenance measure. This library allows devs, among other things, to catalogue and display all prop and UI state permutations. This allows devs to visually ensure that all component states are non-breaking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Thank you for your time and I really look forward to hearing back from you!
